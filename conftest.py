@@ -15,7 +15,6 @@ def test_setup(request):
 
     driver.implicitly_wait(10)
     driver.maximize_window()
-    x = driver.find_element_by_id()
     request.cls.driver = driver
     yield
     driver.close()
